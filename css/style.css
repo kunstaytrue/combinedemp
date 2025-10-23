@@ -1,0 +1,1210 @@
+/* Base reset */
+.zama-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.zama-page body { /* Changed from just `body` to scope it */
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+  padding-top: 70px; /* for fixed nav */
+}
+
+/* Navigation */
+.zama-page nav {
+  background-color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.zama-page nav .brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #046b1d;
+}
+
+.zama-page nav .nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.zama-page nav .nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.zama-page nav .nav-links a:hover {
+  background-color: rgba(4, 107, 29, 0.1);
+  border: 1px solid rgba(4, 107, 29, 0.3);
+}
+
+/* Hero section */
+.zama-page .hero {
+  background: linear-gradient(to left, #24b63c, #044410, #01330a);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.zama-page .hero h1,
+.zama-page .hero h2 {
+  font-family: 'Helvetica Neue', sans-serif; /* unified font */
+}
+
+.zama-page .hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.zama-page .hero h2 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+/* Mission Section */
+.zama-page .mission {
+  width: 100%;
+  background-color: #e9e9e9;
+  padding: 60px 0;
+}
+
+.zama-page .mission-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.zama-page .mission-content h2 {
+  color: #015717;
+  margin-bottom: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.zama-page .mission-content p {
+  font-size: 1.05rem;
+  color: #011606;
+  line-height: 1.7;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Stats Section */
+.zama-page .stats {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8rem;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+.zama-page .stat-item h3,
+.zama-page .stat-item p {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.zama-page .stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #046b1d;
+  margin-bottom: 0.5rem;
+}
+
+.zama-page .stat-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Buttons */
+.zama-page .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.zama-page .button1,
+.zama-page .button2 {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.zama-page .button1 {
+  background-color: #036414;
+  color: white;
+  border: none;
+}
+
+.zama-page .button1:hover {
+  background-color: #048b1d;
+  transform: translateY(-3px);
+}
+
+.zama-page .button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #036414;
+}
+
+.zama-page .button2:hover {
+  background-color: #f0fff4;
+  transform: translateY(-3px);
+}
+
+/* Why Choose Us Section */
+.zama-page .why-choose-us {
+  width: 100%;
+  background-color: #ebeaea;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.zama-page .why-choose-us h2 {
+  color: #046b1d;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.zama-page .reasons,
+.zama-page .trainingreasons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.zama-page .reason,
+.zama-page .trainingreason {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.zama-page .reason:hover,
+.zama-page .trainingreason:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.zama-page .reason h3,
+.zama-page .trainingreason h3 {
+  color: #036414;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.zama-page .reason p,
+.zama-page .trainingreason p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Ready to Enroll Section */
+.zama-page .enroll {
+  background: linear-gradient(to left, #24b63c, #044410, #01330a);
+  color: white; /* Added missing color property */
+  padding: 80px 80px;
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.zama-page .enroll h1,
+.zama-page .enroll h2,
+.zama-page .enroll p {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+}
+
+/* Footer */
+.zama-page  footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #01330a;
+  border-top: 1px solid #eee;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  position: relative;
+}
+
+/* Contact & Calculate Fees Sections */
+.zama-page .contact-section,
+.zama-page .contact-form,
+.zama-page .business-details,
+.zama-page .course-item,
+.zama-page .discount-section,
+.zama-page .venue-container,
+.zama-page .venue-box {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Course Boxes */
+.zama-page .course-item {
+  background-color: #ffffff;
+  color: rgb(15, 59, 4);
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.zama-page .course-item label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.zama-page .course-name {
+  font-weight: 500;
+}
+
+.zama-page .course-price {
+  font-weight: bold;
+  color: #046b1d;
+}
+
+/* Discount Section */
+.zama-page .discount-section {
+  background-color: #fffae6; /* peach/light background for the section */
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.zama-page .discount-title {
+  width: 100%;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000702;
+  margin-bottom: 20px;
+}
+.zama-page .discount-section > div {
+  background-color: #ffffff; /* small white box for each discount */
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 200px; /* lets them line up next to each other */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.zama-page .calculate-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #046b1d; /* same green as your other buttons */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 3rem;
+}
+
+.zama-page .calculate-button:hover {
+  background-color: #035315;
+}
+
+/* Venue Boxes */
+.zama-page .venue-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* --- Contact Section Layout --- */
+.zama-page .contact-section {
+    padding: 60px 20px; /* top/bottom 60px, sides 20px */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.zama-page .contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.zama-page .contact-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Form styling with padding */
+.zama-page .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spacing between inputs */
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.zama-page .contact-form input,
+.zama-page .contact-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.zama-page .contact-form button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #078512; /* peachish button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.zama-page .contact-form button:hover {
+    background-color: #07a81d;
+}
+
+/* Business details spacing */
+.zama-page .business-details {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* --- Contact Page Main Layout --- */
+.zama-page .contact-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.zama-page .contact-left {
+  flex: 2 1 600px; /* make it take more space than right */
+  padding: 50px; /* wider padding for user details */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Make the right business details narrower */
+.zama-page .contact-right {
+  flex: 1 1 300px; /* less width than left */
+  padding: 30px; /* keep moderate padding */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.zama-page .contact-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.zama-page .contact-left p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Form inputs */
+.zama-page .contact-left input,
+.zama-page .contact-left textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.zama-page .contact-left button {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #046b1d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.zama-page .contact-left button:hover {
+  background-color: #035315;
+}
+
+/* Contact Right */
+.zama-page .contact-right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.zama-page .contact-right p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Training Venues Section */
+.zama-page .contact-venues {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.zama-page .contact-venues h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.zama-page .venue-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.zama-page .venue-box {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.zama-page .venue-box h3 {
+  margin-bottom: 10px;
+  color: #046b1d;
+}
+.zama-page .contact-venues-wrapper {
+  background-color: #f5f5f5; /* very very light grey */
+  padding: 60px 20px; /* top/bottom padding for space */
+  width: 100%; /* full width of the page */
+}
+
+.zama-page .contact-venues-wrapper .contact-venues {
+  max-width: 1200px;
+  margin: 0 auto; /* keep the venues centered */
+  text-align: center;
+}
+
+/* Map Section */
+.zama-page .contact-map {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.zama-page .contact-map h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.zama-page .map-container iframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .zama-page .contact-main {
+    flex-direction: column;
+  }
+
+  .zama-page .venue-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .zama-page nav .nav-links {
+    display: none;
+  }
+
+  .zama-page .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .zama-page .stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .zama-page .contact-section {
+    flex-direction: column;
+  }
+}
+/* ===================================================
+   BASE STYLING & VARIABLES
+=================================================== */
+.friend-page {
+  --base-font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --base-size: 16px;
+  --muted-color: #2D5E51;
+  --accent-green: #295629;
+  --light-green: #5abc5a;
+  --bg-light: #F0EDE6;
+  --card-bg: #FFFFFF;
+  --shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.friend-page {
+  font-family: var(--base-font);
+  font-size: var(--base-size);
+  background-color: var(--bg-light);
+  color: var(--muted-color);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.friend-page h1,
+.friend-page h2,
+.friend-page p,
+.friend-page li {
+  margin: 0;
+}
+
+/* ===================================================
+   TYPOGRAPHY
+=================================================== */
+.friend-page h1 {
+  text-align: center;
+  color: var(--accent-green);
+  font-size: 2.5rem;
+  margin-top: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.friend-page h2 {
+  color: var(--accent-green);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.friend-page p,
+.friend-page li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+.friend-page ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.friend-page .sub {
+  text-align: center;
+  color: var(--muted-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 15px auto 40px;
+  max-width: 750px;
+}
+
+/* ===================================================
+   GLOBAL CARD STYLE
+=================================================== */
+.friend-page .div2,
+.friend-page .div3,
+.friend-page .div4,
+.friend-page .div5,
+.friend-page .div6,
+.friend-page .div8,
+.friend-page .div9,
+.friend-page .div10 {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  position: relative;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Accent bar on the left */
+.friend-page .div2::before,
+.friend-page .div3::before,
+.friend-page .div4::before,
+.friend-page .div5::before,
+.friend-page .div6::before,
+.friend-page .div8::before,
+.friend-page .div9::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: var(--accent-green);
+  border-radius: 12px 0 0 12px;
+}
+
+.friend-page .div2:hover,
+.friend-page .div3:hover,
+.friend-page .div4:hover,
+.friend-page .div5:hover,
+.friend-page .div6:hover,
+.friend-page .div8:hover,
+.friend-page .div9:hover,
+.friend-page .div10:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================================
+   PRICE TAG (for div5–div9)
+=================================================== */
+.friend-page .div5::after,
+.friend-page .div6::after,
+.friend-page .div8::after,
+.friend-page .div9::after {
+  content: "R___";
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background-color: var(--accent-green);
+  color: #fff;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+.friend-page button {
+  background-color: var(--light-green);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.friend-page button:hover {
+  background-color: var(--accent-green);
+}
+
+/* Make buttons from div5–9 longer and centered */
+.friend-page .div5 button,
+.friend-page .div6 button,
+.friend-page .div8 button,
+.friend-page .div9 button {
+  width: 90%;
+  align-self: center;
+  padding: 16px 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===================================================
+   SPECIAL SECTION (div10)
+=================================================== */
+.friend-page .div10 {
+  background: linear-gradient(90deg, rgba(41, 86, 41, 1) 0%, rgba(90, 188, 90, 1) 100%);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 60px;
+  margin-top: 80px;
+}
+
+.friend-page .div10 h2 {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+/* ===================================================
+   COURSE GRID LAYOUT
+=================================================== */
+.friend-page .course {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, auto);
+  gap: 30px;
+  padding: 40px 5%;
+}
+
+/* First 3 divs horizontally centered */
+.friend-page .div2,
+.friend-page .div3,
+.friend-page .div4 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 20px 1.5%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Bigger gap for div5–div9 */
+.friend-page .div5,
+.friend-page .div6,
+.friend-page .div8,
+.friend-page .div9 {
+  margin-top: 60px;
+}
+
+/* ===================================================
+   SMALL BOXES (duration, fee, type)
+=================================================== */
+.friend-page .inner {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 18px;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+
+.friend-page .duration,
+.friend-page .fee,
+.friend-page .type {
+  background-color: #eaf5ea;
+  border: 2px solid #5abc5a;
+  color: var(--accent-green);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px 0;
+  box-shadow: var(--shadow);
+}
+
+/* ===================================================
+   CALCULATE GRID
+=================================================== */
+.friend-page .calculate {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  width: 85%;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.friend-page .calculate > div {
+  background-color: #fff;
+  border-radius: 14px;
+  padding: 35px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- CAL1: FORM ---------- */
+.friend-page .cal1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.friend-page .cal1 label {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+.friend-page .cal1 input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.friend-page .cal1 input:focus {
+  border-color: #285628;
+  outline: none;
+}
+
+.friend-page .cal1 button {
+  background-color: #285628;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.friend-page .cal1 button:hover {
+  background-color: #3b7c3b;
+}
+
+/* ---------- CAL2 + CAL3: CHECKBOXES ---------- */
+.friend-page .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+.friend-page .checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.friend-page .checkbox-group input[type="checkbox"] {
+  accent-color: #285628;
+  transform: scale(1.4);
+}
+
+/* ---------- CAL4: INLINE INPUTS ---------- */
+.friend-page .inline-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.friend-page .inline-inputs input {
+  flex: 1;
+  min-width: 200px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.friend-page .inline-inputs input:focus {
+  border-color: #285628;
+  outline: none;
+}
+
+/* ===================================================
+   COURSES PAGE (crs, di1, di2, di3)
+=================================================== */
+.friend-page main {
+  padding: 30px;
+}
+
+.friend-page .crs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* Shared section styles */
+.friend-page .crs > div {
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 30px 40px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.friend-page .crs > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Section 1: Overview --- */
+.friend-page .di1 {
+  background: linear-gradient(90deg, #295629 0%, #5abc5a 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.friend-page .di1 h1 {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.friend-page .di1 p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* --- Section 2: Six-Month Courses --- */
+.friend-page .di2 {
+  border-left: 6px solid #5abc5a;
+}
+
+.friend-page .di2 h2 {
+  font-size: 2rem;
+  color: #295629;
+  margin-bottom: 15px;
+}
+
+.friend-page .di2 p,
+.friend-page .di2 ul,
+.friend-page .di2 li {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.friend-page .di2 ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.friend-page .di2 button {
+  background-color: #5abc5a;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.friend-page .di2 button:hover {
+  background-color: #295629;
+}
+
+/* --- Section 3: Six-Week Courses --- */
+.friend-page .di3 {
+  border-left: 6px solid #1f7a1f;
+}
+
+.friend-page .di3 h2 {
+  font-size: 2rem;
+  color: #1f7a1f;
+  margin-bottom: 15px;
+}
+
+.friend-page .di3 p,
+.friend-page .di3 ul,
+.friend-page .di3 li {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.friend-page .di3 ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.friend-page .di3 button {
+  background-color: #1f7a1f;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.friend-page .di3 button:hover {
+  background-color: #144d14;
+}
+.friend-page nav {
+  background-color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.friend-page nav .brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #046b1d;
+}
+
+.friend-page nav .nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.friend-page .nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.friend-page nav .nav-links a:hover {
+  background-color: rgba(4, 107, 29, 0.1);
+  border: 1px solid rgba(4, 107, 29, 0.3);
+}
+.friend-page  footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #01330a;
+  border-top: 1px solid #eee;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  position: relative;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN
+=================================================== */
+@media (max-width: 900px) {
+  .friend-page .div2,
+  .friend-page .div3,
+  .friend-page .div4 {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .friend-page .div5,
+  .friend-page .div6,
+  .friend-page .div8,
+  .friend-page .div9 {
+    margin-top: 40px;
+  }
+
+  .friend-page .div5 button,
+  .friend-page .div6 button,
+  .friend-page .div8 button,
+  .friend-page .div9 button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .friend-page .calculate {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .friend-page .calculate {
+    width: 95%;
+    padding: 15px;
+    gap: 25px;
+  }
+
+  .friend-page .inline-inputs {
+    flex-direction: column;
+  }
+
+  .friend-page .inline-inputs input {
+    width: 100%;
+  }
+
+  .friend-page .div2 i,
+  .friend-page .div3 i,
+  .friend-page .div4 i {
+    font-size: 24px;
+  }
+
+  .friend-page h1 {
+    font-size: 22px;
+    margin-top: 24px;
+  }
+
+  .friend-page .crs {
+    padding: 0 15px;
+    gap: 25px;
+  }
+
+  .friend-page .di1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .friend-page .di2 h2,
+  .friend-page .di3 h2 {
+    font-size: 1.6rem;
+  }
+
+  .friend-page .di1 p,
+  .friend-page .di2 p,
+  .friend-page .di3 p {
+    font-size: 1rem;
+  }
+}
